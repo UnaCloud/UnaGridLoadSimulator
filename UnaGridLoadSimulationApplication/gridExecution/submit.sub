@@ -1,0 +1,10 @@
+universe = java
+executable = ../UnaGridLoadSimulador.jar
+jar_files = UnaGridLoadSimulador.jar
+arguments = grid.GridExecution $ENV(ValorInicio)
+environment = "Valor=$ENV(ValorInicio)"
+log        = logs/log$ENV(ValorInicio).log
+output     = salidas/salida$ENV(ValorInicio).out
+error      = errores/errores$ENV(ValorInicio).err
+Queue
+
